@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+:root {
+    --primary-color: #ff9100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+	position: relative;
+    min-height: 100dvh;
+    width: 100vw;
+}
+
+.icon {
+	height: 2em;
+	width: 2em;
+}
+
+.invert {
+	filter: invert(100%);
+}
+
+.gradient {
+	background: linear-gradient(334deg, #525252, #2b292e, #000000);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

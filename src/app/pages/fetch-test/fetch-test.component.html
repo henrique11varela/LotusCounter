@@ -1,0 +1,12 @@
+<div class="page">
+    <div *ngIf="card">
+        <h1>{{ card.name }}</h1>
+        <img [src]="card.image" alt="" style="height: 300px;">
+    </div>
+    <ul *ngIf="firebaseService.db">
+        <li *ngFor="let item of firebaseService.db">
+            <p>{{ item.name }} by {{ item.author }} </p>
+        </li>
+    </ul>
+</div>
+<app-menu-button></app-menu-button>

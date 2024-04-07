@@ -1,0 +1,15 @@
+<div class="playerArea" [ngStyle]="{backgroundColor: bgcolor}">
+    <div class="playerLife invert">
+        <div class="lifeDisplay">
+            <p class="life">{{ player.life }}</p>
+        </div>
+        <div class="lifeInteraction">
+            <div (click)="minusLife()" class="center">
+                <img class="icon" src="assets/svg/minus.svg" alt="-">
+            </div>
+            <div (click)="plusLife()" class="center">
+                <img class="icon" src="assets/svg/plus.svg" alt="+">
+            </div>
+        </div>
+    </div>
+</div>
