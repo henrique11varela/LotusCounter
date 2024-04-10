@@ -1,9 +1,19 @@
 .page {
-    background-color: pink;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.cardGrid {
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.cardGrid > * {
+    width: 100%;
 }
 
 app-menu-button {

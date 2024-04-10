@@ -1,27 +1,25 @@
+---
+runme:
+  id: 01HV28DV8AMX3BZAJW9AMRFJ51
+  version: v3
+---
+
 # MTGLifeCounter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
+### Setup project
 
-## Development server
+```sh {"id":"01HV28G9NTTGG5Q22NGY5ZV7CN"}
+npm i
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Run Development Server
 
-## Code scaffolding
+```sh {"id":"01HV28K050HB3T8JETHZH0X1RG"}
+npx ng serve --open
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Build Project
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```sh {"id":"01HV28MR8H4BS3R9GA2P50RKV5"}
+npm ng build
+```

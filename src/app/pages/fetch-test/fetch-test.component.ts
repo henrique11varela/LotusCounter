@@ -1,26 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FirebaseService } from 'src/app/services/firebase.service';
 import { ScryfallService } from 'src/app/services/scryfall.service';
 import { Card } from "../../models/card.model";
+
+interface CardSearch {
+  name: string
+}
 
 @Component({
   selector: 'app-fetch-test',
   templateUrl: './fetch-test.component.html',
   styleUrls: ['./fetch-test.component.scss']
 })
-export class FetchTestComponent implements OnInit {
+export class FetchTestComponent {
 
-  public card: Card | null = null;
+  public searchParams: CardSearch = {
+    name: '',
+  }
+
+  public testOutput: any;
 
   constructor(public firebaseService: FirebaseService, private scryfallService: ScryfallService) { }
 
-  async getCardById(id: string){
-    this.card = await this.scryfallService.getCardById(id)
-    
-    console.log(this.card);
+  async search(){
+    const res = await fetch('https://api.scryfall.com/cards/search?order=cmc&q=c%3Ared+pow%3D3')
+    const json = await res.json()
+    const arrayOfObj = json.data as []
+    this.testOutput = arrayOfObj.map(item => new Card(item))
   }
 
-  ngOnInit(): void {
-    this.getCardById('')
-  }
 }

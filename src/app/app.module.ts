@@ -8,21 +8,25 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 // components
 import { AppComponent } from './app.component';
 import { MenuButtonComponent } from './shared/menu-button/menu-button.component';
+import { PlayerComponent } from './pages/life-counter/player/player.component';
 
 // pages
+import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
+import { FetchTestComponent } from './pages/fetch-test/fetch-test.component';
+import { LifeCounterComponent } from './pages/life-counter/life-counter.component';
 
 // services
 import { LocalstorageService } from './services/localstorage.service';
 
+// directives
+import { InvertAspectRatioDirective } from './directives/invert-aspect-ratio.directive';
+
 // PrimeNG
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { ButtonModule } from 'primeng/button';
-import { HomeComponent } from './pages/home/home.component';
-import { InvertAspectRatioDirective } from './directives/invert-aspect-ratio.directive';
-import { LifeCounterComponent } from './pages/life-counter/life-counter.component';
-import { PlayerComponent } from './pages/life-counter/player/player.component';
-import { FetchTestComponent } from './pages/fetch-test/fetch-test.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { MtgCardComponent } from './shared/mtg-card/mtg-card.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,8 @@ import { FetchTestComponent } from './pages/fetch-test/fetch-test.component';
     InvertAspectRatioDirective,
     LifeCounterComponent,
     PlayerComponent,
-    FetchTestComponent
+    FetchTestComponent,
+    MtgCardComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +51,8 @@ import { FetchTestComponent } from './pages/fetch-test/fetch-test.component';
       registrationStrategy: 'registerWhenStable:30000'
     }),
     SelectButtonModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule
   ],
   providers: [LocalstorageService],
   bootstrap: [AppComponent]

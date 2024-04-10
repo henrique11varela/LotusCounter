@@ -1,0 +1,38 @@
+.card {
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 5/7;
+    .cardInner {
+        display: flex;
+        img {
+            height: 100%;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-delay: 250ms;
+            width: 100%;
+            border-radius: 5px;
+            object-fit: fill;
+            &.back {
+                width: 0px;
+                // transform: rotateY('90deg');
+            }
+        }
+    }
+}
+
+.card:hover {
+    .cardInner {
+        img {
+            height: 100%;
+            // transition-property: width;
+            // transition-duration: 2s;
+            // transition-delay: 250ms;
+            width: 0px;
+            &.back {
+                width: 100%;
+                transform: rotateY('0deg');
+            }
+        }
+    }
+}
+
