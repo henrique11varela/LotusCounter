@@ -7,13 +7,13 @@
 }
 
 .cardGrid {
-    max-width: 80vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    max-width: 83vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .cardGrid > * {
-    width: 100%;
+    width: 40vw;
 }
 
 app-menu-button {
