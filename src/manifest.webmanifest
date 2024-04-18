@@ -1,9 +1,9 @@
 {
   "name": "MTGLifeCounter",
   "short_name": "MTGLifeCounter",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
-  "display": "standalone",
+  "theme_color": "#1f1f1f",
+  "background_color": "#1f1f1f",
+  "display": "fullscreen",
   "scope": "./",
   "start_url": "./",
   "icons": [
