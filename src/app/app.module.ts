@@ -9,6 +9,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 import { MenuButtonComponent } from './shared/menu-button/menu-button.component';
 import { PlayerComponent } from './pages/life-counter/player/player.component';
+import { ButtonSelectComponent } from './shared/button-select/button-select.component';
+import { ButtonComponent } from './shared/button/button.component';
 
 // pages
 import { HomeComponent } from './pages/home/home.component';
@@ -38,7 +40,9 @@ import { MtgCardComponent } from './shared/mtg-card/mtg-card.component';
     LifeCounterComponent,
     PlayerComponent,
     FetchTestComponent,
-    MtgCardComponent
+    MtgCardComponent,
+    ButtonSelectComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,13 @@
+type test = {
+  life?: number
+}
+
 export class Player{
 
     public life: number;
 
-    constructor(life?: number) {
-        this.life = life ? life : 20;
+    constructor(properties: test = {}) {
+        this.life = properties.life ? properties.life : 20;
     }
 
     plusLife(){

@@ -1,20 +1,13 @@
 <div class="page">
-    <h1 style="color: white;">ICON</h1>
-    <div class="form">
+    <!-- <h1 style="color: white;">ICON</h1> -->
+    <img src="../../../assets/icons/icon-512x512.png" class="icon" alt="icon">
+    <div class="actions">
         <!-- player max life select -->
-        <p-selectButton [options]="playerMaxLifeOptions" [(ngModel)]="playersService.maxPlayerLife" optionLabel="icon">
-            <ng-template let-item>
-                <p>{{ item }}</p>
-            </ng-template>
-        </p-selectButton>
+        <c-button-select [(value)]="playersService.maxPlayerLife" [options]="playerMaxLifeOptions"></c-button-select>
         <!-- player quantity select -->
-        <p-selectButton [options]="playerNumberOptions" [(ngModel)]="playersService.numberOfPlayers" optionLabel="icon">
-            <ng-template let-item>
-                <p>{{ item }}</p>
-            </ng-template>
-        </p-selectButton>
-        <p-button label="Start Game" (click)="startGame()" styleClass="w-full"></p-button>
-        <p-button label="Continue Game" (click)="continueGame()" styleClass="w-full"></p-button>
+        <c-button-select [(value)]="playersService.numberOfPlayers" [options]="playerNumberOptions"></c-button-select>
+        <c-button (click)="startGame()" class="w-full">Start Game</c-button>
+        <c-button (click)="continueGame()" class="w-full">Continue Game</c-button>
     </div>
 </div>
 <app-menu-button></app-menu-button>
