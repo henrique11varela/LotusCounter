@@ -3,7 +3,7 @@
         <input pInputText id="name" [(ngModel)]="searchParams.name" />
         <label for="username">Name</label>
     </span>
-    <button pButton (click)="search()">Search</button>
+    <c-button (click)="search()">Search</c-button>
     <div class="cardGrid">
         <app-mtg-card *ngFor="let card of testOutput" [card]="card"></app-mtg-card>
     </div>

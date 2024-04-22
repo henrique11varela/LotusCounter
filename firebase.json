@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "dist/mtglife-counter",
+    "site": "lotus-counter",
+    "public": "dist/lotus-counter",
     "ignore": [
       "firebase.json",
       "**/.*",

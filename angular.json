@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MTGLifeCounter": {
+    "LotusCounter": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mtglife-counter",
+            "outputPath": "dist/lotus-counter",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MTGLifeCounter:build:production"
+              "browserTarget": "LotusCounter:build:production"
             },
             "development": {
-              "browserTarget": "MTGLifeCounter:build:development"
+              "browserTarget": "LotusCounter:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MTGLifeCounter:build"
+            "browserTarget": "LotusCounter:build"
           }
         },
         "test": {

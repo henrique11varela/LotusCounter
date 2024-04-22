@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "testapp-a8099"
-  }
+    "default": "lotuscounter",
+    "prod": "lotuscounter"
+  },
+  "targets": {},
+  "etags": {}
 }

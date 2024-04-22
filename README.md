@@ -1,4 +1,4 @@
-# MTGLifeCounter
+# Lotus Counter
 
 ### Setup project
 
