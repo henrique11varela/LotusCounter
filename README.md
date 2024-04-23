@@ -6,6 +6,8 @@
 
 ### Setup project
 
+Create `src/environment/environment.ts` file and fill it out
+
 ```sh
 npm i
 ```

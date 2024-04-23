@@ -1,8 +1,8 @@
 :root {
-  --primary: #007bff;
-  --primary-active: #6ea8fe;
-  --secondary: #6c757d;
-  --secondary: #a7acb1;
+  --primary: var(--pink);
+  --primary-active: var(--pink-active);
+  --secondary: var(--green);
+  --secondary-active: var(--green-active);
   --success: #28a746;
   --success-active: #75b798;
   --danger: #dc3545;
@@ -12,12 +12,12 @@
   --info: #17a2b8;
   --info-active: #6edff6;
 
+  --pink: #ff6188;
+  --pink-active: #ffa7bd;
   --green:#a9dc76;
   --green-active:#8bb066;
   --yellow: #fff48a;
   --yellow-active: #e8d397;
-  --pink: #ff6188;
-  --pink-active: #ffa7bd;
   --purple: #ab9df2;
   --purple-active: #c0b7ec;
   --orange: #FC9867;

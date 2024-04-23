@@ -1,6 +1,9 @@
-<div class="card" [ngClass]="{'two-sided': card.images.length > 1}">
-    <div class="cardInner">
-        <img src="{{ card.images[0] }}" alt="front">
-        <img class="back" *ngIf="card.images.length > 1" src="{{ card.images[1] }}" alt="back">
-    </div>
+<div class="card" [ngClass]="{'two-sided': card.images.length > 1, 'flipped': flipped}">
+  <div class="cardInner">
+    <img src="{{ card.images[0] }}" alt="front">
+    <img class="back" *ngIf="card.images.length > 1" src="{{ card.images[1] }}" alt="back">
+  </div>
+  <div class="flip" (click)="flipCard()" *ngIf="card.images.length > 1">
+    <img src="assets/svg/flip.svg" alt="flip">
+  </div>
 </div>

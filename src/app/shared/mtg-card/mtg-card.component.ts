@@ -8,4 +8,9 @@ import { Card } from 'src/app/models/card.model';
 })
 export class MtgCardComponent {
   @Input() public card!: Card;
+  public flipped: boolean = false;
+
+  flipCard(){
+    this.flipped = !this.flipped;
+  }
 }

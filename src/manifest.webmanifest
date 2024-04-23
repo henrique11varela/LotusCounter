@@ -1,8 +1,8 @@
 {
   "name": "Lotus Counter",
   "short_name": "Lotus Counter",
-  "theme_color": "#1f1f1f",
-  "background_color": "#1f1f1f",
+  "theme_color": "#1e1e1e",
+  "background_color": "#1e1e1e",
   "display": "fullscreen",
   "scope": "./",
   "start_url": "./",

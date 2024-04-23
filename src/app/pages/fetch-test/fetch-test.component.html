@@ -1,11 +1,8 @@
 <div class="page">
-    <span class="p-float-label">
-        <input pInputText id="name" [(ngModel)]="searchParams.name" />
-        <label for="username">Name</label>
-    </span>
-    <c-button (click)="search()">Search</c-button>
-    <div class="cardGrid">
-        <app-mtg-card *ngFor="let card of testOutput" [card]="card"></app-mtg-card>
-    </div>
+  <input id="name" [(ngModel)]="searchParams.name" placeholder="Name" />
+  <c-button (click)="search()">Search</c-button>
+  <div class="cardGrid">
+    <app-mtg-card *ngFor="let card of testOutput" [card]="card"></app-mtg-card>
+  </div>
 </div>
 <app-menu-button></app-menu-button>
