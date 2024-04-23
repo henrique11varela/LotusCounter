@@ -10,7 +10,8 @@ export class MtgCardComponent {
   @Input() public card!: Card;
   public flipped: boolean = false;
 
-  flipCard(){
+  flipCard(event: Event){
+    event.preventDefault()
     this.flipped = !this.flipped;
   }
 }

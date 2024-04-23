@@ -5,11 +5,17 @@ app-menu-button {
   transform: translateX(-100%) translatey(-100%);
 }
 
+.face {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
 .actions {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  width: 80vw;
+  width: 100%;
 }
 
 .icon {

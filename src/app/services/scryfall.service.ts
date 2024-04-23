@@ -8,8 +8,7 @@ export class ScryfallService {
 
   constructor() { }
 
-  async getCardById(id: string) {
-    id = '56ebc372-aabd-4174-a943-c7bf59e5028d'
+  public async getCardById(id: string) {
     const res = await fetch(`https://api.scryfall.com/cards/${id}`)
     const data = await res.json()
     return new Card(data)

@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { LifeCounterComponent } from './pages/life-counter/life-counter.component';
 import { FetchTestComponent } from './pages/fetch-test/fetch-test.component';
+import { CardComponent } from './pages/card/card.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,15 @@ const routes: Routes = [
   {
     path: 'test',
     component: FetchTestComponent
+  },
+  {
+    path: 'card',
+    children: [
+      {
+        path: ':id',
+        component: CardComponent
+      }
+    ]
   },
   {
     path: '**',

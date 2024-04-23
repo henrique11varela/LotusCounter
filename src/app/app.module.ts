@@ -29,6 +29,8 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { MtgCardComponent } from './shared/mtg-card/mtg-card.component';
+import { SignatureComponent } from './shared/signature/signature.component';
+import { CardComponent } from './pages/card/card.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { MtgCardComponent } from './shared/mtg-card/mtg-card.component';
     FetchTestComponent,
     MtgCardComponent,
     ButtonSelectComponent,
-    ButtonComponent
+    ButtonComponent,
+    SignatureComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
