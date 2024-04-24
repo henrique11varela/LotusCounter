@@ -1,8 +1,20 @@
 # Lotus Counter
 
 <div align="center">
-  <img src="./src/assets/icons/icon-128x128.png" alt="logo"/>
+  <a href="https://lotus-counter.web.app">
+    <img src="./src/assets/icons/icon-128x128.png" alt="logo"/>
+  </a>
 </div>
+
+## About
+
+This is a life counter app for Magic the Gathering
+
+Feel free to use it, on your browser or installed as a PWA!
+
+[lotus-counter.web.app](https://lotus-counter.web.app)
+
+## For Developers
 
 ### Setup project
 
