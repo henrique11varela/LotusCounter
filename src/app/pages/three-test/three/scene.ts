@@ -8,11 +8,10 @@ class Scene extends THREE.Scene {
 
 const scene: Scene = new Scene()
 
-//const cubeFaces: any[] = [];
-//for (let i = 0; i < 6; i++) {
-//  cubeFaces.push(new THREE.TextureLoader().load(`./assets/${i + 1}.png`))
-//}
-const cube = new THREE.Mesh(new THREE.BoxGeometry(), new THREE.MeshStandardMaterial({ color: 0xff0000 }))
+const sides = [5, 2, 3, 4, 6, 1]
+const cubeFaces = sides.map((item)=> new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load(`./assets/three/dice/${item}.png`)}))
+
+const cube = new THREE.Mesh(new THREE.BoxGeometry(), cubeFaces)
 scene.add(cube)
 
 const dLight: THREE.DirectionalLight = new THREE.DirectionalLight()
