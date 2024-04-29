@@ -1,6 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-@import "primeng/resources/themes/lara-light-blue/theme.css";
-@import "primeng/resources/primeng.css";
 @import "variables.scss";
 
 * {
@@ -10,17 +7,23 @@
   // outline: 1px solid #f00 !important;
 }
 
+body {
+  background-color: var(--dark);
+}
+
 .page {
-  position: relative;
-  min-height: 100dvh;
-  width: 100vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: var(--dark);
   color: var(--light);
+  overflow-y: scroll;
 }
 
 h1 {

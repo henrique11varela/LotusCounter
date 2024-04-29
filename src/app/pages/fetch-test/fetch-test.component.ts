@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FirebaseService } from 'src/app/services/firebase.service';
 import { ScryfallService } from 'src/app/services/scryfall.service';
 import { Card } from "../../models/card.model";
 
@@ -20,7 +19,7 @@ export class FetchTestComponent {
 
   public testOutput: any;
 
-  constructor(public firebaseService: FirebaseService, private scryfallService: ScryfallService) { }
+  constructor(private scryfallService: ScryfallService) { }
 
   async search(){
     const res = await fetch('https://api.scryfall.com/cards/search?order=cmc&q=c%3Ared+pow%3D3')

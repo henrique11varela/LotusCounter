@@ -7,6 +7,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { LifeCounterComponent } from './pages/life-counter/life-counter.component';
 import { FetchTestComponent } from './pages/fetch-test/fetch-test.component';
 import { CardComponent } from './pages/card/card.component';
+import { ThreeTestComponent } from './pages/three-test/three-test.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'test',
     component: FetchTestComponent
+  },
+  {
+    path: 'three',
+    component: ThreeTestComponent
   },
   {
     path: 'card',

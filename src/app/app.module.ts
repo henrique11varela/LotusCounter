@@ -25,12 +25,10 @@ import { LocalstorageService } from './services/localstorage.service';
 import { InvertAspectRatioDirective } from './directives/invert-aspect-ratio.directive';
 
 // PrimeNG
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
 import { MtgCardComponent } from './shared/mtg-card/mtg-card.component';
 import { SignatureComponent } from './shared/signature/signature.component';
 import { CardComponent } from './pages/card/card.component';
+import { ThreeTestComponent } from './pages/three-test/three-test.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +44,8 @@ import { CardComponent } from './pages/card/card.component';
     ButtonSelectComponent,
     ButtonComponent,
     SignatureComponent,
-    CardComponent
+    CardComponent,
+    ThreeTestComponent
   ],
   imports: [
     BrowserModule,
@@ -58,9 +57,6 @@ import { CardComponent } from './pages/card/card.component';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    SelectButtonModule,
-    ButtonModule,
-    InputTextModule
   ],
   providers: [LocalstorageService],
   bootstrap: [AppComponent]

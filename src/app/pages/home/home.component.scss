@@ -5,6 +5,10 @@ app-menu-button {
   transform: translateX(-100%) translatey(-100%);
 }
 
+.page {
+  justify-content: center;
+}
+
 .face {
   display: flex;
   flex-direction: column;

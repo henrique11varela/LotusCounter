@@ -1,4 +1,7 @@
-<div class="page">
-  <h1>{{ card?.name }}</h1>
+<div *ngIf="card" class="page">
+  <h1>{{ card.name }}</h1>
   <app-mtg-card [card]="card"></app-mtg-card>
+  <p>{{ card.type_line }}</p>
+  <p *ngFor="let text of card.oracle_text">{{ text }}</p>
 </div>
+<app-menu-button></app-menu-button>

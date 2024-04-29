@@ -18,6 +18,7 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe(async (params: Params) => {
       this.card = await this.scryfallService.getCardById(params['id'])
+      console.log(this.card);
     })
   }
 }
