@@ -9,7 +9,12 @@ class Scene extends THREE.Scene {
 const scene: Scene = new Scene()
 
 const sides = [5, 2, 3, 4, 6, 1]
-const cubeFaces = sides.map((item)=> new THREE.MeshLambertMaterial({map: new THREE.TextureLoader().load(`./assets/three/dice/${item}.png`)}))
+const cubeFaces = sides.map((item) => {
+  const faceTexture = new THREE.TextureLoader().load(`./assets/three/dice/${item}.png`)
+  faceTexture.magFilter = THREE.NearestFilter
+  const face = new THREE.MeshLambertMaterial({ map: faceTexture })
+  return face
+})
 
 const cube = new THREE.Mesh(new THREE.BoxGeometry(), cubeFaces)
 scene.add(cube)
