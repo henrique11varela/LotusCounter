@@ -12,7 +12,7 @@ This is a life counter app for Magic the Gathering
 
 Feel free to use it, on your browser or installed as a PWA!
 
-[lotus-counter.web.app](https://lotus-counter.web.app)
+[lotus-counter.vercel.app](https://lotus-counter.vercel.app)
 
 ## For Developers
 
