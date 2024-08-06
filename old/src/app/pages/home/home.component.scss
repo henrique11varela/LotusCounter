@@ -1,0 +1,30 @@
+app-menu-button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-100%) translatey(-100%);
+}
+
+.page {
+  justify-content: center;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.icon {
+  --image-size: 10em;
+  border-radius: calc(var(--image-size) / 5);
+  width: var(--image-size);
+  height: var(--image-size);
+}

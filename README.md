@@ -1,37 +1,5 @@
-# Lotus Counter
+# Vue 3 + Vite
 
-<div align="center">
-  <a href="https://lotus-counter.web.app">
-    <img src="./src/assets/icons/icon-128x128.png" alt="logo"/>
-  </a>
-</div>
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## About
-
-This is a life counter app for Magic the Gathering
-
-Feel free to use it, on your browser or installed as a PWA!
-
-[lotus-counter.vercel.app](https://lotus-counter.vercel.app)
-
-## For Developers
-
-### Setup project
-
-Create `src/environment/environment.ts` file and fill it out
-
-```sh
-npm i
-```
-
-### Run Development Server
-
-```sh
-npx ng s --open
-```
-
-### Build Project
-
-```sh
-npx ng build
-```
+Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
