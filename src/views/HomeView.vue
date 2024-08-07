@@ -1,9 +1,11 @@
-<script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
   <main>
-    <TheWelcome />
+    <router-link :to="{ name: 'about' }">
+      <ButtonElement>About</ButtonElement>
+    </router-link>
   </main>
 </template>
+
+<script setup lang="ts">
+import ButtonElement from '@/components/shared/ButtonElement.vue'
+</script>
