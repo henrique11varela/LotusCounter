@@ -26,6 +26,7 @@ button,
   color: var(--light);
   padding: 0.7em;
   border-radius: 0.5em;
+  line-height: normal;
   font-weight: 700;
   font-size: 1.1em;
   font-weight: 700;
