@@ -1,7 +1,7 @@
 <template>
   <main data-cy="menu-page">
     <div class="container">
-      <ButtonElement :to="{ name: 'about' }">About1</ButtonElement>
+      <ButtonElement :to="{ name: 'trackLifeMenu' }">Track Life</ButtonElement>
       <ButtonElement :to="{ name: 'about' }">About2</ButtonElement>
     </div>
   </main>

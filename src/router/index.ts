@@ -15,6 +15,16 @@ const router = createRouter({
           component: MenuView
         },
         {
+          path: '/tracklifemenu',
+          name: 'trackLifeMenu',
+          component: () => import('../views/TrackLifeMenuView.vue')
+        },
+        {
+          path: '/tracklife',
+          name: 'trackLife',
+          component: () => import('../views/TrackLifeView.vue')
+        },
+        {
           path: '/about',
           name: 'about',
           component: () => import('../views/AboutView.vue')
