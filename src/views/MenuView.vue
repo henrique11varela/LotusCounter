@@ -11,7 +11,7 @@
 import ButtonElement from '@/components/shared/ButtonElement.vue'
 </script>
 
-<style>
+<style scoped>
 main {
   min-height: 100dvh;
   width: 100vw;

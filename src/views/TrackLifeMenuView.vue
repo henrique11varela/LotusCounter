@@ -46,7 +46,7 @@ async function continueGame() {
 
 </script>
 
-<style>
+<style scoped>
 main {
   min-height: 100dvh;
   width: 100vw;

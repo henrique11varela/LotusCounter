@@ -1,61 +1,85 @@
 <template>
-  <main data-cy="track-life-page">
-    <h1>Track Life</h1>
-    <div v-for="(player, index) in playersStore.players" :key="index">
-      <p>{{ player.life }} - {{ player.poison }}</p>
-      <button @click="lifePlus(player)">+</button>
-      <button @click="lifeMinus(player)">-</button>
-      <button @click="poisonPlus(player)">+</button>
-      <button @click="poisonMinus(player)">-</button>
+  <main data-cy="track-life-page" :class="`grid${playersStore.players.length}`">
+    <div v-for="(player, index) in playersStore.players" :key="index" class="player" :id="`player${index + 1}`">
+      <PlayerComponent :player="player"></PlayerComponent>
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
-import type { Player } from "@/assets/typing/Player";
 import { usePlayersStore } from "../stores/players";
+import PlayerComponent from "@/components/TrackLifeView/PlayerComponent.vue";
 
 const playersStore = usePlayersStore()
 
-function lifePlus(player: Player) {
-  player.lifePlus()
-  playersStore.savePlayers()
-}
-
-function lifeMinus(player: Player) {
-  player.lifeMinus()
-  playersStore.savePlayers()
-}
-
-function poisonPlus(player: Player) {
-  player.poisonPlus()
-  playersStore.savePlayers()
-}
-
-function poisonMinus(player: Player) {
-  player.poisonMinus()
-  playersStore.savePlayers()
-}
 </script>
 
-<style>
+<style scoped>
 main {
   min-height: 100dvh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
 }
 
-.container {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+#player1 {
+  grid-area: player1;
 }
 
-.container>* {
-  width: 100%;
+#player2 {
+  grid-area: player2;
+}
+
+#player3 {
+  grid-area: player3;
+}
+
+#player4 {
+  grid-area: player4;
+}
+
+#player5 {
+  grid-area: player5;
+}
+
+#player6 {
+  grid-area: player6;
+}
+
+.grid1 {
+  grid-template-areas: "player1";
+}
+
+.grid2 {
+  grid-template-areas: 
+  "player1"
+  "player2";
+}
+
+.grid3 {
+  grid-template-areas: 
+  "player1 player2"
+  "player3 player3"
+  ;
+}
+
+.grid4 {
+  grid-template-areas: 
+  "player1 player2"
+  "player3 player4"
+  ;
+}
+
+.grid5 {
+  grid-template-areas:
+  "player1 player2"
+  "player3 player4"
+  "player5 player5";
+}
+
+.grid6 {
+  grid-template-areas: 
+  "player1 player2"
+  "player3 player4"
+  "player5 player6";
 }
 </style>
